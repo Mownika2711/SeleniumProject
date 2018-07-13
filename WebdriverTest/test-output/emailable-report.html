@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">ChromeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">23,877</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">FirefoxTest</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">47,849</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num attn">1</th><th class="num">0</th><th class="num">71,726</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">example.CrossBrowserScript</td><td><a href="#m0">testParameterWithXML</a></td><td rowspan="1">1530378808976</td><td rowspan="1">13291</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">FirefoxTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">example.CrossBrowserScript</td><td><a href="#m1">setup</a></td><td rowspan="1">1530378798406</td><td rowspan="1">47785</td></tr><tr><th colspan="4">FirefoxTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">example.CrossBrowserScript</td><td><a href="#m2">testParameterWithXML</a></td><td rowspan="1">1530378846244</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>ChromeTest</h2><h3 id="m0">example.CrossBrowserScript#testParameterWithXML</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>FirefoxTest</h2><h3 id="m1">example.CrossBrowserScript#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+378816673	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1530378816673	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1530378816673	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1530378816674	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1530378816675	addons.manager	DEBUG	Starting provider: GMPProvider
+1530378816699	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1530378816699	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1530378816699	addons.manager	DEBUG	Starting provider: PluginProvider
+1530378816700	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1530378816700	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1530378816701	addons.manager	DEBUG	Completed startup sequence
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: Failed to connect GPU process (t=66.4929) [GFX1-]: Failed to connect GPU process
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Could not get a DXGI adapter (t=31.4022) [GFX1-]: Could not get a DXGI adapter
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: Failed to connect GPU process (t=66.4929) |[1][GFX1-]: [D3D11] failed to get compositor device. (t=84.1707) [GFX1-]: [D3D11] failed to get compositor device.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: Failed to connect GPU process (t=66.4929) |[1][GFX1-]: [D3D11] failed to get compositor device. (t=84.1707) |[2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_NO_DEVICE (t=84.1707) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_NO_DEVICE
+1530378843720	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
+1530378843721	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 30.1.0
+1530378843722	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 1.0
+1530378843723	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1530378843724	addons.xpi	DEBUG	Calling bootstrap method shutdown on followonsearch@mozilla.com version 0.9.6
+1530378843725	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1530378843725	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1530378843726	addons.xpi	DEBUG	Calling bootstrap method shutdown on activity-stream@mozilla.org version 2018.04.20.1103-b3b95672
+Unable to read VR Path Registry from C:\Users\Hai\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/AutoCompletePopup.jsm, line 109: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]
+1530378845401	addons.repository	DEBUG	No addons.json found.
+1530378845548	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1530378845548	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1530378845549	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;Admin&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at example.CrossBrowserScript.setup(CrossBrowserScript.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.openqa.selenium.WebDriverException: java.lang.InterruptedException: Process timed out after waiting for 45000 ms.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;Admin&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:131)
+	at org.openqa.selenium.firefox.FirefoxBinary.waitFor(FirefoxBinary.java:222)
+	at org.openqa.selenium.firefox.FirefoxBinary.clean(FirefoxBinary.java:242)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:91)
+	... 26 more
+Caused by: java.lang.InterruptedException: Process timed out after waiting for 45000 ms.
+	at org.openqa.selenium.os.UnixProcess.waitFor(UnixProcess.java:148)
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:129)
+	... 29 more
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">example.CrossBrowserScript#testParameterWithXML</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+378816673	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1530378816673	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1530378816673	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1530378816674	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1530378816675	addons.manager	DEBUG	Starting provider: GMPProvider
+1530378816699	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1530378816699	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1530378816699	addons.manager	DEBUG	Starting provider: PluginProvider
+1530378816700	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1530378816700	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1530378816701	addons.manager	DEBUG	Completed startup sequence
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: Failed to connect GPU process (t=66.4929) [GFX1-]: Failed to connect GPU process
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Could not get a DXGI adapter (t=31.4022) [GFX1-]: Could not get a DXGI adapter
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: Failed to connect GPU process (t=66.4929) |[1][GFX1-]: [D3D11] failed to get compositor device. (t=84.1707) [GFX1-]: [D3D11] failed to get compositor device.
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: Failed to connect GPU process (t=66.4929) |[1][GFX1-]: [D3D11] failed to get compositor device. (t=84.1707) |[2][GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_NO_DEVICE (t=84.1707) [GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_NO_DEVICE
+1530378843720	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
+1530378843721	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 30.1.0
+1530378843722	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 1.0
+1530378843723	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1530378843724	addons.xpi	DEBUG	Calling bootstrap method shutdown on followonsearch@mozilla.com version 0.9.6
+1530378843725	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1530378843725	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1530378843726	addons.xpi	DEBUG	Calling bootstrap method shutdown on activity-stream@mozilla.org version 2018.04.20.1103-b3b95672
+Unable to read VR Path Registry from C:\Users\Hai\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/AutoCompletePopup.jsm, line 109: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]
+1530378845401	addons.repository	DEBUG	No addons.json found.
+1530378845548	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1530378845548	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1530378845549	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;Admin&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at example.CrossBrowserScript.setup(CrossBrowserScript.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.openqa.selenium.WebDriverException: java.lang.InterruptedException: Process timed out after waiting for 45000 ms.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;Admin&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:131)
+	at org.openqa.selenium.firefox.FirefoxBinary.waitFor(FirefoxBinary.java:222)
+	at org.openqa.selenium.firefox.FirefoxBinary.clean(FirefoxBinary.java:242)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:91)
+	... 26 more
+Caused by: java.lang.InterruptedException: Process timed out after waiting for 45000 ms.
+	at org.openqa.selenium.os.UnixProcess.waitFor(UnixProcess.java:148)
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:129)
+	... 29 more
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
